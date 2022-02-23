@@ -9,10 +9,13 @@
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="org.jetbrains.plugins.template.services.MyApplicationService"/>
         <projectService serviceImplementation="org.jetbrains.plugins.template.services.MyProjectService"/>
+        <projectService serviceImplementation="org.jetbrains.plugins.template.providers.ProjectVersionFromPOMProvider"/>
+        <defaultTemplatePropertiesProvider implementation="org.jetbrains.plugins.template.providers.PerProjectTemplatePropertiesProvider"/>
     </extensions>
 
-    <applicationListeners>
+    <projectListeners>
         <listener class="org.jetbrains.plugins.template.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+        <listener class="org.jetbrains.plugins.template.listeners.RootPOMProjectVersionFileChangeListener" topic="com.intellij.openapi.vfs.newvfs.BulkFileListener"/>
+    </projectListeners>
 </idea-plugin>

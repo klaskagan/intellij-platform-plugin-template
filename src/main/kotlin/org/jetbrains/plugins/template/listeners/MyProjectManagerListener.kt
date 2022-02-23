@@ -8,6 +8,7 @@ import org.jetbrains.plugins.template.services.MyProjectService
 internal class MyProjectManagerListener : ProjectManagerListener {
 
     override fun projectOpened(project: Project) {
-        project.service<MyProjectService>()
+        val service = project.service<MyProjectService>()
+        service.updateProjectVersion(project)
     }
 }
