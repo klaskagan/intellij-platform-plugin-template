@@ -1,21 +1,21 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>org.jetbrains.plugins.template</id>
-    <name>Template</name>
-    <vendor>JetBrains</vendor>
+    <id>com.klaskagan.plugins.mpvp</id>
+    <name>Maven Project Version Property</name>
+    <vendor email="vikbaracevicius@gmail.com" >Viktoras Baracevičius</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="org.jetbrains.plugins.template.services.MyApplicationService"/>
-        <projectService serviceImplementation="org.jetbrains.plugins.template.services.MyProjectService"/>
-        <projectService serviceImplementation="org.jetbrains.plugins.template.providers.ProjectVersionFromPOMProvider"/>
-        <defaultTemplatePropertiesProvider implementation="org.jetbrains.plugins.template.providers.PerProjectTemplatePropertiesProvider"/>
+        <applicationService serviceImplementation="com.klaskagan.plugins.mpvp.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.klaskagan.plugins.mpvp.services.MyProjectService"/>
+        <projectService serviceImplementation="com.klaskagan.plugins.mpvp.providers.ProjectVersionFromPOMProvider"/>
+        <defaultTemplatePropertiesProvider implementation="com.klaskagan.plugins.mpvp.providers.PerProjectTemplatePropertiesProvider"/>
     </extensions>
 
     <projectListeners>
-        <listener class="org.jetbrains.plugins.template.listeners.MyProjectManagerListener"
+        <listener class="com.klaskagan.plugins.mpvp.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
-        <listener class="org.jetbrains.plugins.template.listeners.RootPOMProjectVersionFileChangeListener" topic="com.intellij.openapi.vfs.newvfs.BulkFileListener"/>
+        <listener class="com.klaskagan.plugins.mpvp.listeners.RootPOMProjectVersionFileChangeListener" topic="com.intellij.openapi.vfs.newvfs.BulkFileListener"/>
     </projectListeners>
 </idea-plugin>

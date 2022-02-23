@@ -1,4 +1,4 @@
-package org.jetbrains.plugins.template
+package com.klaskagan.plugins.mpvp
 
 /**
  * @author Viktoras Baracevicius

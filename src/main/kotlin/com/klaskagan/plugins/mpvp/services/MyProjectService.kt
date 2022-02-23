@@ -1,9 +1,9 @@
-package org.jetbrains.plugins.template.services
+package com.klaskagan.plugins.mpvp.services
 
 import com.intellij.openapi.project.Project
-import org.jetbrains.plugins.template.Constants.PROJECT_PROPERTY_KEY
-import org.jetbrains.plugins.template.MyBundle
-import org.jetbrains.plugins.template.providers.ProjectVersionFromPOMProvider
+import com.klaskagan.plugins.mpvp.Constants.PROJECT_PROPERTY_KEY
+import com.klaskagan.plugins.mpvp.MyBundle
+import com.klaskagan.plugins.mpvp.providers.ProjectVersionFromPOMProvider
 import java.util.*
 
 class MyProjectService(project: Project) {

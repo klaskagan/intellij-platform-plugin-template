@@ -1,9 +1,9 @@
-package org.jetbrains.plugins.template.providers
+package com.klaskagan.plugins.mpvp.providers
 
 import com.intellij.ide.fileTemplates.DefaultTemplatePropertiesProvider
 import com.intellij.openapi.components.service
 import com.intellij.psi.PsiDirectory
-import org.jetbrains.plugins.template.services.MyProjectService
+import com.klaskagan.plugins.mpvp.services.MyProjectService
 import java.util.*
 
 /**

@@ -1,16 +1,16 @@
-package org.jetbrains.plugins.template.providers
+package com.klaskagan.plugins.mpvp.providers
 
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.project.guessProjectDir
 import com.intellij.openapi.util.text.StringUtil
 import com.intellij.openapi.vfs.VirtualFile
 import org.apache.commons.lang.StringUtils
-import org.jetbrains.plugins.template.Constants.PARENT
-import org.jetbrains.plugins.template.Constants.PARENT_END
-import org.jetbrains.plugins.template.Constants.POM_XML
-import org.jetbrains.plugins.template.Constants.REGEX
-import org.jetbrains.plugins.template.Constants.VERSION
-import org.jetbrains.plugins.template.Constants.VERSION_END
+import com.klaskagan.plugins.mpvp.Constants.PARENT
+import com.klaskagan.plugins.mpvp.Constants.PARENT_END
+import com.klaskagan.plugins.mpvp.Constants.POM_XML
+import com.klaskagan.plugins.mpvp.Constants.REGEX
+import com.klaskagan.plugins.mpvp.Constants.VERSION
+import com.klaskagan.plugins.mpvp.Constants.VERSION_END
 
 class ProjectVersionFromPOMProvider(private val project: Project) {
 

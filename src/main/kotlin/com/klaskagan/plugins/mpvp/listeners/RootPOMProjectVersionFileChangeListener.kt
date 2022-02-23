@@ -1,4 +1,4 @@
-package org.jetbrains.plugins.template.listeners
+package com.klaskagan.plugins.mpvp.listeners
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.Project
@@ -8,8 +8,8 @@ import com.intellij.openapi.vfs.newvfs.BulkFileListener
 import com.intellij.openapi.vfs.newvfs.events.VFileContentChangeEvent
 import com.intellij.openapi.vfs.newvfs.events.VFileCreateEvent
 import com.intellij.openapi.vfs.newvfs.events.VFileEvent
-import org.jetbrains.plugins.template.Constants.POM_XML
-import org.jetbrains.plugins.template.services.MyProjectService
+import com.klaskagan.plugins.mpvp.Constants.POM_XML
+import com.klaskagan.plugins.mpvp.services.MyProjectService
 
 
 /**
